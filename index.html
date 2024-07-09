@@ -11,8 +11,21 @@
     <!-- sample image -->
     <meta property="og:image" content="assets/images/image1.png" />
     <title>Document</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P5JQ7HDC18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P5JQ7HDC18');
+</script>
 </head>
 <body>
-    <a href="https://dev.bidsnbuys.com/auth/login">Go to website</a>
+    <a href="https://dev.bidsnbuys.com/auth/login" onclick="gtag('event', 'social_share', {
+        'method': 'Facebook',
+        'content_type': 'article',
+        'content_id': '1234'
+    }); return false;">>Go to website</a>
 </body>
 </html>
